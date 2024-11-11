@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE STEAM[
+<!ELEMENT STEAM (juegos)>
+<!ELEMENT juegos (juego+)>
+<!ELEMENT juego (precio,fecha,descripcion,DLC*, rebaja?)>
+<!ATTLIST juego id ID #REQUIRED >
+<!ATTLIST juego nombre CDATA #REQUIRED >
+<!ELEMENT precio EMPTY>
+<!ATTLIST precio EU CDATA #REQUIRED>
+<!ATTLIST precio USA CDATA #REQUIRED>
+<!ELEMENT fecha EMPTY>
+<!ATTLIST fecha anyo CDATA #REQUIRED >
+<!ATTLIST fecha mes CDATA #REQUIRED >
+<!ATTLIST fecha dia CDATA #REQUIRED >
+<!ELEMENT descripcion ANY>
+<!ELEMENT DLC (nombre+)>
+<!ELEMENT nombre ANY>
+<!ELEMENT rebaja EMPTY>
+<!ATTLIST rebaja descuento CDATA #REQUIRED >]>
+<STEAM>
+  <juegos>
+    <juego id="J1" nombre="The Witcher 3">
+      <precio EU="60" USA="80" />
+      <fecha anyo ="2015" mes="5" dia="18"/>
+      <descripcion>
+        The Witcher 3: Wild Hunt es un videojuego de rol desarrollado y publicado por la compañía polaca CD Projekt RED.
+      </descripcion>
+      <DLC>
+        <nombre>Blood and Wine</nombre>  
+        <nombre>Heart of Stone</nombre>    
+      </DLC>
+      <rebaja descuento="50"/>
+    </juego>
+    
+    <juego id="J2" nombre="Phasmophobia">
+      <precio EU="19.50" USA="19.99" />
+      <fecha anyo ="2020" mes="9" dia="4"/>
+      <descripcion>
+        Phasmophobia es un videojuego de terror independiente desarrollado y publicado por Kinetic Games.
+      </descripcion>
+      <rebaja descuento="10"/>
+    </juego>
+    
+    <juego id="J3" nombre="Warhammer 40.000: Space Marine 2">
+      <precio EU="60" USA="80" />
+      <fecha anyo ="2024" mes="9" dia="9"/>
+      <descripcion>
+        Warhammer 40.000: Space Marine 2 es un videojuego de disparos en tercera persona hack and slash desarrollado por Sabre Saint Petersburg y publicado por Focus Entertainment.
+      </descripcion>
+      <DLC>
+        <nombre>"Macragge's Expansion Pack"</nombre>      
+      </DLC>
+    </juego>
+    
+    <juego id="J4" nombre="Age of Empires 2">
+      <precio EU="60" USA="80" />
+      <fecha anyo ="1999" mes="9" dia="27"/>
+      <descripcion>
+        Age of Empires II es un videojuego de estrategia en tiempo real desarrollado por Forgotten Empires y publicado por Xbox Game Studios.
+      </descripcion>
+      <DLC>
+        <nombre>"Rise of the Rajas"</nombre>
+        <nombre>"The Forgotten"</nombre>
+        <nombre>"Dawn of the Dukes"</nombre> 
+        <nombre>"Dynasties of India"</nombre> 
+        <nombre>"Lords of the West"</nombre>
+        <nombre>"Return of Rome"</nombre> 
+        <nombre>"The Mountain Royals"</nombre>
+        <nombre>"Victors and Vanquished"</nombre>
+        <nombre>"The Conqueros"</nombre>                           
+      </DLC>
+      <rebaja descuento="30"/>
+    </juego>
+    <juego id="J5" nombre="counter strike 2">
+      <precio EU="0" USA="0" />
+      <fecha anyo ="2012" mes="8" dia="21"/>
+      <descripcion>
+        Durante las dos últimas décadas, Counter‑Strike ha proporcionado una experiencia competitiva de primer nivel para los millones de jugadores de todo el mundo que contribuyeron a darle forma. Ahora el próximo capítulo en la historia de CS está a punto de comenzar. Hablamos de Counter‑Strike 2.      </descripcion>
+    </juego>
+  </juegos>
+</STEAM>
